@@ -40,9 +40,21 @@ export default function HomePage() {
   return (
     <div className="w-full">
       {/* 1. HERO SECTION */}
-      <section className="relative overflow-hidden pt-12 pb-24 md:pt-20 md:pb-32 bg-gradient-to-b from-brand-teal/5 via-brand-blue/5 to-transparent">
-        {/* Animated grid overlays */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-30 dark:opacity-10" />
+      <section className="relative overflow-hidden pt-16 pb-24 md:pt-24 md:pb-32 bg-slate-50/20 dark:bg-slate-950/20">
+        {/* Blurred Hospital Lobby Background */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/images/hospital_lobby.png"
+            alt="Hospital Lobby Ambient Background"
+            className="w-full h-full object-cover filter blur-[80px] opacity-20 dark:opacity-[0.08]"
+          />
+          {/* Subtle color overlays for depth and smoothness */}
+          <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-white/80 to-white dark:from-slate-950/40 dark:via-slate-950/80 dark:to-slate-950" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(13,148,136,0.06),transparent_45%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(2,132,199,0.04),transparent_45%)]" />
+          {/* Subtle grid pattern overlay */}
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-[0.2] dark:opacity-[0.06]" />
+        </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -169,7 +181,7 @@ export default function HomePage() {
           {DEPARTMENTS.slice(0, 6).map((dept) => (
             <div
               key={dept.id}
-              className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800/80 rounded-2xl overflow-hidden shadow-sm hover-lift flex flex-col h-full"
+              className="bg-white/85 dark:bg-slate-900/80 backdrop-blur-md border border-slate-200/40 dark:border-slate-800/60 rounded-2xl overflow-hidden shadow-sm hover-lift flex flex-col h-full"
             >
               <div className="h-44 relative overflow-hidden">
                 <img
@@ -225,7 +237,7 @@ export default function HomePage() {
             {DOCTORS.slice(0, 4).map((doc) => (
               <div
                 key={doc.id}
-                className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between"
+                className="bg-white/85 dark:bg-slate-900/80 backdrop-blur-md border border-slate-200/40 dark:border-slate-800/60 rounded-2xl overflow-hidden shadow-sm hover-lift flex flex-col justify-between"
               >
                 <div className="p-4 flex flex-col items-center text-center space-y-4">
                   <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-brand-teal/20 relative">
