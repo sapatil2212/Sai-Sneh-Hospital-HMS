@@ -284,7 +284,7 @@ export default function AdminDashboard({
                         {apt.status !== "CANCELLED" && (
                           <button
                             onClick={() => handleUpdateStatus(apt.id, "CANCELLED")}
-                            className="p-1.5 rounded-lg bg-red-500 hover:bg-red-650 text-white cursor-pointer"
+                            className="p-1.5 rounded-lg bg-red-500 hover:bg-red-600 text-white cursor-pointer"
                             title="Cancel Booking"
                           >
                             <X className="w-3.5 h-3.5" />

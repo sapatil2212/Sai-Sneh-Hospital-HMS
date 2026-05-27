@@ -32,7 +32,7 @@ export default function HeroSlideshow() {
   }, []);
 
   return (
-    <div className="relative w-full h-[380px] sm:h-[480px] lg:h-[560px] rounded-3xl overflow-hidden border border-slate-200/50 dark:border-slate-800/80 shadow-premium bg-slate-100 dark:bg-slate-950">
+    <div className="relative w-full h-[300px] sm:h-[370px] lg:h-[440px] rounded-3xl overflow-hidden border border-slate-200/50 dark:border-slate-800/80 shadow-premium bg-slate-100 dark:bg-slate-950">
       <AnimatePresence mode="wait">
         <motion.div
           key={current}

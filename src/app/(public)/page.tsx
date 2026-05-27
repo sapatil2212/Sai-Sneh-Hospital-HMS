@@ -77,7 +77,7 @@ export default function HomePage() {
 
                 <a
                   href="tel:08888150101"
-                  className="flex items-center justify-center gap-1.5 px-5 py-2.5 rounded-full text-xs font-bold text-emergency-red bg-emergency-red/10 border border-emergency-red/20 hover:bg-emergency-red/20 transition-all text-center animate-pulse-slow"
+                  className="flex items-center justify-center gap-1.5 px-5 py-2.5 rounded-full text-xs font-bold text-white bg-red-600 hover:bg-red-700 transition-all text-center shadow-md cursor-pointer hover:shadow-lg"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
                   <span>Call Emergency 24/7</span>

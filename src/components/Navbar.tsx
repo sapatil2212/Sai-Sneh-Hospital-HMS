@@ -150,7 +150,7 @@ export default function Navbar() {
             <div className="flex lg:hidden items-center gap-1.5">
               <a
                 href="tel:08888150101"
-                className="p-2 rounded-full text-white bg-red-650 animate-pulse"
+                className="p-2 rounded-full text-white bg-red-600 animate-pulse"
               >
                 <PhoneCall className="w-3.5 h-3.5" />
               </a>

@@ -111,7 +111,7 @@ export default function EmergencyWidget() {
 
                   <button
                     type="submit"
-                    className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-850 dark:bg-slate-800 dark:hover:bg-slate-700 text-white text-sm font-bold transition-all shadow-sm"
+                    className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl bg-red-600 hover:bg-red-700 text-white text-sm font-bold transition-all shadow-md cursor-pointer"
                   >
                     <Truck className="w-4 h-4 text-red-500" />
                     <span>Send Ambulance Now</span>
@@ -166,7 +166,7 @@ export default function EmergencyWidget() {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="w-14 h-14 bg-red-650 hover:bg-red-700 text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-red-500/25 cursor-pointer relative animate-pulse-slow"
+        className="w-14 h-14 bg-red-600 hover:bg-red-700 text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-red-500/25 cursor-pointer relative animate-pulse-slow"
       >
         <PhoneCall className="w-6 h-6 text-white" />
         <span className="absolute -top-1 -right-1 flex h-3 w-3">

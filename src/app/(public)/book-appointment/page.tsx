@@ -127,7 +127,7 @@ function BookAppointmentForm() {
         {!success ? (
           <form onSubmit={handleBooking} className="p-6 md:p-8 space-y-6">
             {error && (
-              <div className="p-4 bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-900/50 rounded-xl text-xs text-red-650 font-semibold">
+              <div className="p-4 bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-900/50 rounded-xl text-xs text-red-600 font-semibold">
                 {error}
               </div>
             )}

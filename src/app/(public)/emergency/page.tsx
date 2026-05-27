@@ -21,7 +21,7 @@ export default function EmergencyPage() {
   return (
     <div className="py-12 md:py-20 font-sans max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
       {/* 1. Header Hero Banner */}
-      <div className="bg-gradient-to-r from-red-650 to-red-800 text-white p-8 md:p-12 rounded-3xl shadow-lg relative overflow-hidden flex flex-col md:flex-row justify-between items-center gap-8">
+      <div className="bg-gradient-to-r from-red-600 to-red-800 text-white p-8 md:p-12 rounded-3xl shadow-lg relative overflow-hidden flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="space-y-4 max-w-xl">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 rounded-full text-xs font-bold uppercase tracking-wider">
             <Clock className="w-3.5 h-3.5" />
@@ -39,7 +39,7 @@ export default function EmergencyPage() {
           <span className="block text-xs uppercase tracking-widest text-red-200 font-extrabold">24x7 Ambulance Helpline</span>
           <a
             href="tel:08888150101"
-            className="flex items-center gap-3 px-8 py-4 bg-white hover:bg-slate-50 text-red-650 font-black text-lg md:text-xl rounded-2xl shadow-xl transition-all hover:scale-101 animate-pulse"
+            className="flex items-center gap-3 px-8 py-4 bg-white hover:bg-slate-50 text-red-600 font-black text-lg md:text-xl rounded-2xl shadow-xl transition-all hover:scale-101 animate-pulse"
           >
             <PhoneCall className="w-6 h-6 text-red-600" />
             <span>088881 50101</span>
@@ -100,7 +100,7 @@ export default function EmergencyPage() {
 
               <button
                 type="submit"
-                className="w-full py-3 bg-red-600 hover:bg-red-750 text-white rounded-xl text-sm font-bold shadow-md transition-all cursor-pointer"
+                className="w-full py-3 bg-red-600 hover:bg-red-700 text-white rounded-xl text-sm font-bold shadow-md transition-all cursor-pointer"
               >
                 Send Ambulance Now
               </button>

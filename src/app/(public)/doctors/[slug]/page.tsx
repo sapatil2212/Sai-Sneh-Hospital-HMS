@@ -169,7 +169,7 @@ export default function DoctorProfilePage() {
             {!success ? (
               <form onSubmit={handleDirectBook} className="space-y-4">
                 {error && (
-                  <div className="p-3 bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-900/50 rounded-xl text-xs text-red-650 font-semibold">
+                  <div className="p-3 bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-900/50 rounded-xl text-xs text-red-600 font-semibold">
                     {error}
                   </div>
                 )}
