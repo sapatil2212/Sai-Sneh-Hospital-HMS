@@ -41,8 +41,12 @@ export default function AdminLoginPage() {
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex flex-col justify-center py-12 sm:px-6 lg:px-8 font-sans">
       <div className="sm:mx-auto sm:w-full sm:max-w-md text-center space-y-4">
         {/* Logo */}
-        <div className="inline-flex p-3 bg-brand-teal/10 rounded-2xl">
-          <HeartPulse className="w-8 h-8 text-brand-teal" />
+        <div className="flex justify-center">
+          <img
+            src="/images/logo.png"
+            alt="Sai Sneh Hospital"
+            className="h-12 w-auto object-contain"
+          />
         </div>
         <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
           Hospital Dashboard

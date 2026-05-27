@@ -51,13 +51,12 @@ export default async function AdminLayout({
         <div className="flex flex-col flex-1 min-h-0">
           {/* Logo */}
           <div className="flex items-center gap-2 px-6 py-5 border-b border-slate-100 dark:border-slate-800">
-            <div className="p-1.5 bg-brand-teal/15 rounded-lg">
-              <HeartPulse className="w-5 h-5 text-brand-teal" />
-            </div>
-            <div>
-              <span className="font-extrabold text-sm text-slate-800 dark:text-white block leading-tight">Sai Sneh</span>
-              <span className="text-[9px] font-bold text-slate-400 block tracking-widest uppercase">Admin Desk</span>
-            </div>
+            <img
+              src="/images/logo.png"
+              alt="Sai Sneh Hospital"
+              className="h-8 w-auto object-contain"
+            />
+            <span className="text-[9px] font-extrabold text-brand-teal uppercase tracking-widest bg-brand-teal/5 px-2 py-0.5 rounded">Admin</span>
           </div>
 
           {/* Links */}

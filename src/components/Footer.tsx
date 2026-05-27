@@ -10,18 +10,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Column 1: Hospital Overview */}
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="p-2 bg-brand-teal/20 rounded-xl">
-                <HeartPulse className="w-6 h-6 text-brand-teal" />
-              </div>
-              <div>
-                <span className="text-xl font-bold tracking-tight text-white">
-                  Sai Sneh
-                </span>
-                <span className="block text-[9px] tracking-widest text-slate-400 uppercase font-semibold">
-                  Multi Speciality Hospital
-                </span>
-              </div>
+            <Link href="/" className="flex items-center group">
+              <img
+                src="/images/logo.png"
+                alt="Sai Sneh Hospital"
+                className="h-10 w-auto object-contain"
+              />
             </Link>
             <p className="text-sm text-slate-400 leading-relaxed">
               Serving Katraj and Pune patients since 1987 (39+ Years). A trusted 50-bed multi-specialty healthcare and maternity care center equipped with an advanced ICU and dialysis facility.

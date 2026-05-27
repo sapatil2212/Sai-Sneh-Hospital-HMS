@@ -58,18 +58,12 @@ export default function Navbar() {
         >
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 group shrink-0">
-              <div className="p-1.5 bg-brand-teal/10 rounded-full group-hover:bg-brand-teal/20 transition-colors">
-                <HeartPulse className="w-4.5 h-4.5 text-brand-teal" />
-              </div>
-              <div className="transition-all duration-350">
-                <span className="text-base font-extrabold tracking-tight bg-gradient-to-r from-brand-teal to-brand-blue bg-clip-text text-transparent">
-                  Sai Sneh
-                </span>
-                <span className="block text-[8px] tracking-widest text-slate-400 uppercase font-black -mt-0.5">
-                  Hospital
-                </span>
-              </div>
+            <Link href="/" className="flex items-center group shrink-0">
+              <img
+                src="/images/logo.png"
+                alt="Sai Sneh Hospital"
+                className="h-8 md:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+              />
             </Link>
 
             {/* Desktop Navigation Links with sliding background capsule */}
